@@ -177,7 +177,9 @@ body {
       rgba(47, 48, 58, 0.4)
     ),
     url("../images/hero.jpg");
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .hero > .container {
