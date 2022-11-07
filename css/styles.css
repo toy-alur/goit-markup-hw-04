@@ -65,7 +65,8 @@ body {
 }
 
 .link:hover,
-.link:focus {
+.link:focus,
+.link:active {
   color: var(--accent-color);
 }
 
@@ -168,6 +169,8 @@ body {
 }
 
 .hero {
+  width: 1600px;
+  margin: 0 auto;
   padding-top: 200px;
   padding-bottom: 200px;
 
@@ -177,7 +180,7 @@ body {
       rgba(47, 48, 58, 0.4)
     ),
     url("../images/hero.jpg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -245,7 +248,9 @@ body {
   background-color: var(--background-third-color);
 }
 /* 
-.benefits-icon-wrapper:hover {
+.benefits-icon-wrapper:hover,
+.benefits-icon-wrapper:focus
+.benefits-icon-wrapper:active {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   border: 1px solid;
 } */
@@ -329,13 +334,15 @@ body {
   align-items: center;
 }
 
-.team-social-link {
+.team-social-link.link {
   border-radius: 50%;
   padding: 12px;
   color: var(--icons-link-color);
 }
 
-.team-social-link:hover {
+.team-social-link:hover,
+.team-social-link:focus,
+.team-social-link:active {
   background-color: var(--accent-color);
   color: var(--background-color);
 }
@@ -354,7 +361,8 @@ body {
   align-items: center;
 }
 
-.customers-link {
+.customers-link.link {
+  color: var(--icons-link-color);
   border: 1px solid var(--icons-link-color);
   border-radius: 4px;
   padding: 16px 32px;
@@ -363,7 +371,9 @@ body {
   align-items: center;
 }
 
-.customers-link:hover {
+.customers-link:hover,
+.customers-link:focus,
+.customers-link:active {
   border-color: var(--accent-color);
   color: var(--accent-color);
 }
@@ -426,6 +436,7 @@ body {
 .portfolio-link:hover,
 .portfolio-link:active,
 .portfolio-link:focus {
+  color: inherit;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -513,7 +524,9 @@ body {
   background-color: var(--icons-background-color);
 }
 
-.footer-social-link.link:hover {
+.footer-social-link.link:hover,
+.footer-social-link.link:focus,
+.footer-social-link.link:active {
   background-color: var(--accent-color);
 }
 
